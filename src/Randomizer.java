@@ -65,7 +65,7 @@ public class Randomizer {
         int health = (int) (Math.random()*100 );
         int smarts = (int) (Math.random()*100 );
         TheGame game = new TheGame(looks, happiness, health, smarts, gender, name);
-        game.startingstats();
+        game.start();
     }
 }
 
