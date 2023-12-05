@@ -165,10 +165,10 @@ public class TheGame {
         System.out.println();
         while (!age.equals("yes")) {
             System.out.println();
-            System.out.println("What would you like to check?");
-            System.out.println("Enter 1 - relationships");
-            System.out.println("Enter 2 - assets");
-            System.out.println("Enter 3 - activities");
+            System.out.println(RED + "Enter 1 - relationships" + RESET);
+            System.out.println(YELLOW + "Enter 2 - assets" + RESET);
+            System.out.println(BLUE  + "Enter 3 - activities" + RESET);
+            System.out.print("What would you like to check? ");
             int eeee = scan.nextInt();
             scan.nextLine();
             if (eeee == 1) {
@@ -179,7 +179,6 @@ public class TheGame {
                 scan.nextLine();
             } else if (eeee == 3){
                 activities();
-                scan.nextLine();
             }
             System.out.print("Age? If not, you have other options! ");
             age =  scan.nextLine();
@@ -339,7 +338,6 @@ public class TheGame {
     }
 
     private void relationships() {
-        if (age < 8) {
             System.out.println();
             System.out.println( RED + "[relationship with Mom: " + relationshipWitMom + "%]");
             if (relationshipWitMom <= 10) {
@@ -394,6 +392,7 @@ public class TheGame {
                 System.out.println(YELLOW + "3) Have a conversation");
                 System.out.println(RED + "4) INSULT");
                 int xxx = scan.nextInt();
+                System.out.println();
                 if (xxx == 1) {
                     if ( relationshipWitDad > 52) {
                         int bro = (int) (Math.random() * 100);
@@ -573,6 +572,7 @@ public class TheGame {
                 System.out.println(YELLOW + "3) Have a conversation");
                 System.out.println(RED + "4) INSULT");
                 int xxx = scan.nextInt();
+                System.out.println();
                 if (xxx == 1) {
                     if ( relationshipWitMom > 52) {
                         int bro = (int) (Math.random() * 100);
@@ -745,7 +745,6 @@ public class TheGame {
                     }
                 }
             }
-        }
     }
 
     private void assets() {
@@ -816,11 +815,12 @@ public class TheGame {
 
 
     private void activities() {
-        System.out.println("1) Love");
-        System.out.println("2) Mind and body");
-        System.out.println("3) Crime");
-        System.out.println("4) Doctor");
-        System.out.println("5) Pets");
+        System.out.println();
+        System.out.println(RED + "1) Love");
+        System.out.println(GREEN  + "2) Mind and body");
+        System.out.println(PURPLE + "3) Crime");
+        System.out.println(BLUE + "4) Doctor");
+        System.out.println(YELLOW + "5) Pets" + RESET);
         System.out.print("Choose an option: ");
         int broski = scan.nextInt();
         System.out.println();
@@ -836,43 +836,43 @@ public class TheGame {
                 int nameDeterminer = (int) (Math.random() * 50);
 
                 if (nameDeterminer > 48) {
-                    name1 = "Joschka Baptist";
+                    name1 = "Joschka Baptist \uD83D\uDC68";
                 } else if (nameDeterminer > 45) {
-                    name1 = "Math Macsen";
+                    name1 = "Math Macson \uD83D\uDC68\uD83C\uDFFB";
                 } else if (nameDeterminer > 42) {
-                    name1 = "Lir Fachtna";
+                    name1 = "Lir Fachtna \uD83D\uDC68";
                 } else if (nameDeterminer > 39) {
-                    name1 = "Conor Blodeuedd";
+                    name1 = "Conor Blodeuedd \uD83D\uDC68\uD83C\uDFFB";
                 } else if (nameDeterminer > 37) {
                     name1 = "Aurora Bellona";
                 } else if (nameDeterminer > 34) {
-                    name1 = "Giunone Nona";
+                    name1 = "Giunone Nona \uD83D\uDC69";
                 } else if (nameDeterminer > 32) {
-                    name1 = "Elissa Thisbe";
+                    name1 = "Elissa Thisbe \uD83D\uDC69\uD83C\uDFFC";
                 } else if (nameDeterminer > 29) {
-                    name1 = "Youko Anastasija";
+                    name1 = "Youko Anastasija \uD83D\uDC69\uD83C\uDFFB";
                 } else if (nameDeterminer > 26) {
-                    name1 = "Maia Elissa";
+                    name1 = "Maia Elissa \uD83D\uDC69";
                 } else if (nameDeterminer > 23) {
-                    name1 = "Brian Diodato";
+                    name1 = "Brian Diodato \uD83D\uDC68\uD83C\uDFFC";
                 } else if (nameDeterminer > 20) {
-                    name1 = "Lorenzo Mosè";
+                    name1 = "Lorenzo Mosè \uD83D\uDC68\uD83C\uDFFD";
                 } else if (nameDeterminer > 16) {
-                    name1 = "Damhán Simone";
+                    name1 = "Damhán Simone \uD83D\uDC68\uD83C\uDFFC";
                 } else if (nameDeterminer > 13) {
-                    name1 = "Hilary Ananth";
+                    name1 = "Hilary Ananth \uD83D\uDC69";
                 } else if (nameDeterminer > 11) {
-                    name1 = "Puja Senka";
+                    name1 = "Puja Senka \uD83D\uDC69\uD83C\uDFFD";
                 } else if (nameDeterminer > 9) {
-                    name1 = "Tamanna Taylor";
+                    name1 = "Tamanna Taylor \uD83D\uDC69\uD83C\uDFFC";
                 } else if (nameDeterminer > 7) {
-                    name1 = "Wendy Harriett";
+                    name1 = "Wendy Harriett \uD83D\uDC69\uD83C\uDFFE";
                 } else if (nameDeterminer > 4) {
-                    name1 = "Doris Milanka";
+                    name1 = "Doris Milanka \uD83D\uDC69\uD83C\uDFFB";
                 } else if (nameDeterminer > 2) {
-                    name1 = "Raida Samara";
+                    name1 = "Raida Samara \uD83D\uDC69\uD83C\uDFFD";
                 } else {
-                    name1 = "London Layne";
+                    name1 = "London Layne \uD83D\uDC68\uD83C\uDFFB";
                 }
 
                 int craziness = (int) (Math.random() * 100);
@@ -881,7 +881,7 @@ public class TheGame {
                 int smarts1 = (int) (Math.random() * 100);
                 int age = (int) (Math.random() * broooo);
                 System.out.println();
-                System.out.println(RED + "❤\uFE0F The dating app has matched you to " + name1 + " ❤\uFE0F");
+                System.out.println(RED + "❤\uFE0F The dating app has matched you to " + name1 + "❤\uFE0F");
                 System.out.println(RED + "[Craziness: " + craziness + "%] ");
                 if (craziness <= 10) {
                     System.out.println("█▒▒▒▒▒▒▒▒▒");
@@ -971,7 +971,7 @@ public class TheGame {
                     System.out.println("██████████");
                 }
 
-                System.out.print("Would you like to date them? ");
+                System.out.print(RED + "Would you like to date " + name1 + "? " + RESET);
                 String yooo = scan.nextLine();
                 if (yooo.equals("yes")) {
                     int bob = 0;
@@ -980,8 +980,32 @@ public class TheGame {
                         if (bob > 39) {
                             System.out.println("Going steady: You are now dating " + name1);
                         } else {
-                            System.out.println("Stood you up. - 10 happiness");
-                            happiness -= 10;
+                            bob = (int) (Math.random() * 5);
+                            if (bob == 1) {
+                                System.out.println(name1 + " asked you out on a date to Texas RoadHouse.");
+                            } else if (bob == 2) {
+                                System.out.println(name1 + " asked you out on a date to Panda Express.");
+                            } else if (bob == 3) {
+                                System.out.println(name1 + " asked you out on a date to Mcdonalds.");
+                            } else if (bob == 4) {
+                                System.out.println(name1 + " asked you out on a date to Sushi for lyfe.");
+                            } else if (bob == 5) {
+                                System.out.println(name1 + " asked you out on a date to Red Lobster.");
+                            }
+                            System.out.print("Would you like to agree to the date? ");
+                            answer = scan.nextLine();
+                            if (answer.equals("yes")) {
+                                System.out.print(name1 + " seems to be running late. Do you wish to wait?");
+                                answer = scan.nextLine();
+                                if (answer.equals("yes")) {
+                                    happiness -= 10;
+                                    System.out.println("Turns out" + name1 + " stood you up... Happiness - 10");
+                                } else {
+                                    System.out.println("You went home.");
+                                }
+                            } else {
+                                System.out.println("Aww... " + name1 + " seemed to be interested in you...");
+                            }
                         }
                     } else if (looks < 70) {
                         bob = (int) (Math.random() * 20);
@@ -1000,9 +1024,140 @@ public class TheGame {
                             happiness -= 5;
                         }
                     }
+                } else {
+                    System.out.println("Good luck next time!");
                 }
+            } else if (broski == 2) {
+                int stuff = (int) (Math.random() * 100);
+                int nameDeterminer = (int) (Math.random() * 50);
+
+                if (nameDeterminer > 48) {
+                    name1 = "Phillip Schneider \uD83D\uDC68";
+                } else if (nameDeterminer > 45) {
+                    name1 = "Kamil Philipes \uD83D\uDC68\uD83C\uDFFB";
+                } else if (nameDeterminer > 42) {
+                    name1 = "Marco Harriet \uD83D\uDC68";
+                } else if (nameDeterminer > 39) {
+                    name1 = "Kyle Smithers \uD83D\uDC68\uD83C\uDFFB";
+                } else if (nameDeterminer > 37) {
+                    name1 = "Kiera Buniz \uD83D\uDC69\uD83C\uDFFC";
+                } else if (nameDeterminer > 34) {
+                    name1 = "Goona Dearth \uD83D\uDC69";
+                } else if (nameDeterminer > 32) {
+                    name1 = "Eliza Dhisbe \uD83D\uDC69\uD83C\uDFFC";
+                } else if (nameDeterminer > 29) {
+                    name1 = "Lucia Equator \uD83D\uDC69\uD83C\uDFFB";
+                } else if (nameDeterminer > 26) {
+                    name1 = "Mia Brosherman \uD83D\uDC69";
+                } else if (nameDeterminer > 23) {
+                    name1 = "Brian Diodato \uD83D\uDC68\uD83C\uDFFC";
+                } else if (nameDeterminer > 20) {
+                    name1 = "Robert Pattinson \uD83D\uDC68\uD83C\uDFFD";
+                } else if (nameDeterminer > 16) {
+                    name1 = "Mosè Simone \uD83D\uDC68\uD83C\uDFFC";
+                } else if (nameDeterminer > 13) {
+                    name1 = "Jannet Shannon \uD83D\uDC69";
+                } else if (nameDeterminer > 11) {
+                    name1 = "Sinja Blachena \uD83D\uDC69\uD83C\uDFFD";
+                } else if (nameDeterminer > 9) {
+                    name1 = "Tamanna Taylor \uD83D\uDC69\uD83C\uDFFC";
+                } else if (nameDeterminer > 7) {
+                    name1 = "Bridgette Kaauffer \uD83D\uDC69\uD83C\uDFFE";
+                } else if (nameDeterminer > 4) {
+                    name1 = "Doris Milanka \uD83D\uDC69\uD83C\uDFFB";
+                } else if (nameDeterminer > 2) {
+                    name1 = "Ambiya Kamilia \uD83D\uDC69\uD83C\uDFFD";
+                } else {
+                    name1 = "Santiago Wise \uD83D\uDC68\uD83C\uDFFB";
+                }
+                System.out.println(name1);
+                System.out.println();
+                int looks1 = (int) (Math.random() * 100);
+                System.out.println(PURPLE + "[Looks: " + looks1 + "%] ");
+                if (looks1 <= 10) {
+                    System.out.println("█▒▒▒▒▒▒▒▒▒");
+                } else if (looks1 <= 20) {
+                    System.out.println("██▒▒▒▒▒▒▒▒");
+                } else if (looks1 <= 30) {
+                    System.out.println("███▒▒▒▒▒▒▒");
+                } else if (looks1 <= 40) {
+                    System.out.println("████▒▒▒▒▒▒");
+                } else if (looks1 <= 50) {
+                    System.out.println("█████▒▒▒▒▒");
+                } else if (looks1 <= 60) {
+                    System.out.println("██████▒▒▒▒");
+                } else if (looks1 <= 70) {
+                    System.out.println("███████▒▒▒");
+                } else if (looks1 <= 80) {
+                    System.out.println("████████▒▒");
+                } else if (looks1 <= 93) {
+                    System.out.println("█████████▒");
+                } else {
+                    System.out.println("██████████");
+                }
+                System.out.println(RESET);
             }
 
+        } else if (broski == 2) {
+            System.out.println("You worked out! And feel extra fresh. Happiness + 3, Looks + 3");
+            happiness+= 3;
+            looks += 3;
+        } else if (broski == 3) {
+            System.out.print("Who would u like to commit a crime against? ");
+            answer = scan.next();
+            getRelationship();
+            if (answer.equals("mom")) {
+
+            }
         }
+    }
+
+    private void getRelationship() {
+
+        System.out.println(BLUE + "[relationship with Dad: " + relationshipWitDad + "%]");
+        if (relationshipWitDad <= 10) {
+            System.out.println("█▒▒▒▒▒▒▒▒▒");
+        } else if (relationshipWitDad <= 20) {
+            System.out.println("██▒▒▒▒▒▒▒▒");
+        } else if (relationshipWitDad <= 30) {
+            System.out.println("███▒▒▒▒▒▒▒");
+        } else if (relationshipWitDad <= 40) {
+            System.out.println("████▒▒▒▒▒▒");
+        } else if (relationshipWitDad <= 50) {
+            System.out.println("█████▒▒▒▒▒");
+        } else if (relationshipWitDad <= 60) {
+            System.out.println("██████▒▒▒▒");
+        } else if (relationshipWitDad <= 70) {
+            System.out.println("███████▒▒▒");
+        } else if (relationshipWitDad <= 80){
+            System.out.println("████████▒▒");
+        } else if (relationshipWitDad <= 93 ) {
+            System.out.println("█████████▒");
+        } else {
+            System.out.println("██████████" + RESET);
+        }
+        System.out.println(BLUE + "[relationship with Mom: " + relationshipWitMom + "%]");
+        if (relationshipWitMom <= 10) {
+            System.out.println("█▒▒▒▒▒▒▒▒▒");
+        } else if (relationshipWitMom <= 20) {
+            System.out.println("██▒▒▒▒▒▒▒▒");
+        } else if (relationshipWitMom <= 30) {
+            System.out.println("███▒▒▒▒▒▒▒");
+        } else if (relationshipWitMom <= 40) {
+            System.out.println("████▒▒▒▒▒▒");
+        } else if (relationshipWitMom <= 50) {
+            System.out.println("█████▒▒▒▒▒");
+        } else if (relationshipWitMom <= 60) {
+            System.out.println("██████▒▒▒▒");
+        } else if (relationshipWitMom <= 70) {
+            System.out.println("███████▒▒▒");
+        } else if (relationshipWitMom <= 80){
+            System.out.println("████████▒▒");
+        } else if (relationshipWitMom <= 93 ) {
+            System.out.println("█████████▒");
+        } else {
+            System.out.println("██████████" + RESET);
+        }
+
     }
 }
