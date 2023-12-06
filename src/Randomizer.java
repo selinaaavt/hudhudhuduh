@@ -1,9 +1,33 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Randomizer {
-    public static void main(String[] args) {
-        String name = " ";
-        String gender = " ";
+    private String name ;
+    private String gender;
+    private int limit;
+    private int happiness;
+    private int looks;
+    private int smarts;
+    private int health;
+
+    public Randomizer() {
+        name = "";
+        gender = "";
+        limit = 100;
+        happiness =0;
+        looks = 0;
+        smarts = 0;
+        health = 0;
+    }
+
+    public Randomizer(String name, String gender) {
+        this.name = name;
+        this.gender = gender;
+        limit = 100;
+        happiness =0;
+        looks = 0;
+        smarts = 0;
+        health = 0;
+    }
+    public void nameGenerator() {
         int genderDeterminer = (int) (Math.random() *2) + 1;
         if (genderDeterminer == 1) {
             gender = "female";
@@ -60,12 +84,30 @@ public class Randomizer {
             }
         }
 
-        int happiness = (int) (Math.random()*100 );
-        int looks = (int) (Math.random()*100 );
-        int health = (int) (Math.random()*100 );
-        int smarts = (int) (Math.random()*100 );
+        happiness = happinessGenerator(limit);
+        looks = looksGenerator(limit);
+        health = healthGenerator(limit);
+        smarts =smartsGenerator(limit);
+
         TheGame game = new TheGame(looks, happiness, health, smarts, gender, name);
         game.start();
+
+    }
+
+    private int happinessGenerator(int limit){
+        return (int) (Math.random()*limit );
+    }
+    private int happinessGenerator() {
+        return (int)(Math.random()*50);
+    }
+    private int looksGenerator(int limit){
+        return (int) (Math.random()*limit );
+    }
+    private int healthGenerator(int limit){
+        return (int) (Math.random()*limit );
+    }
+    private int smartsGenerator(int limit){
+        return (int) (Math.random()*limit );
     }
 }
 
